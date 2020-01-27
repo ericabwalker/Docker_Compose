@@ -1,0 +1,5 @@
+version: "3.7"
+
+services:
+    hello-container:
+        image: hello-world 

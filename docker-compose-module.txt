@@ -1,0 +1,32 @@
+Creating network "docker_compose_default" with the default driver
+Pulling hello-container (hello-world:)...
+latest: Pulling from library/hello-world
+1b930d010525: Pull complete
+Digest: sha256:9572f7cdcee8591948c2963463447a53466950b3fc15a247fcad1917ca215a2f
+Status: Downloaded newer image for hello-world:latest
+Creating docker_compose_hello-container_1 ... done
+Attaching to docker_compose_hello-container_1
+hello-container_1  |
+hello-container_1  | Hello from Docker!
+hello-container_1  | This message shows that your installation appears to be working correctly.
+hello-container_1  |
+hello-container_1  | To generate this message, Docker took the following steps:
+hello-container_1  |  1. The Docker client contacted the Docker daemon.
+hello-container_1  |  2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+hello-container_1  |     (amd64)
+hello-container_1  |  3. The Docker daemon created a new container from that image which runs the
+hello-container_1  |     executable that produces the output you are currently reading.
+hello-container_1  |  4. The Docker daemon streamed that output to the Docker client, which sent it
+hello-container_1  |     to your terminal.
+hello-container_1  |
+hello-container_1  | To try something more ambitious, you can run an Ubuntu container with:
+hello-container_1  |  $ docker run -it ubuntu bash
+hello-container_1  |
+hello-container_1  | Share images, automate workflows, and more with a free Docker ID:
+hello-container_1  |  https://hub.docker.com/
+hello-container_1  |
+hello-container_1  | For more examples and ideas, visit:
+hello-container_1  |  https://docs.docker.com/get-started/
+hello-container_1  |
+docker_compose_hello-container_1 exited with code 0
+-----
