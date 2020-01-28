@@ -11,3 +11,34 @@ services:
         image: alpine:latest 
         volumes: 
             - ./scripts:/home/scripts
+
+    app:
+        image: gentux/php:lumen-5.6-ci
+        volumes:
+            - ./:/var/www
+        networks:
+            - modules
+            
+    web:
+        image: gentux/nginx:fpm
+        ports:
+            - "80:80"
+        links:
+            - app:fpm.local
+        networks:
+            - modules      
+            
+    mysql:
+        image: mysql:5.6
+        environment:
+            MYSQL_DATABASE: "modules"
+            MYSQL_USER: "modules"
+            MYSQL_PASSWORD: "secret"
+            MYSQL_ROOT_PASSWORD: "secret"
+        ports:
+            - "3306:3306"
+        networks:
+            - modules
+                       
+networks:
+    modules:
