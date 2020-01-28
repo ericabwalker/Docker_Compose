@@ -30,3 +30,8 @@ hello-container_1  |  https://docs.docker.com/get-started/
 hello-container_1  |
 docker_compose_hello-container_1 exited with code 0
 -----
+Starting docker_compose_hello-container_1 ... done
+Attaching to docker_compose_hello-container_1
+hello-container_1  | Hello, Docker Compose!
+docker_compose_hello-container_1 exited with code 0
+-----
